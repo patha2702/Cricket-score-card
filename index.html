@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket score card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="score-card">
+        <div class="teams">
+            <div class="score-card__home-team">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="Indian logo" id="score-card__home-team__logo">
+                <h3 id="score-card__home-team__name">Home</h3>
+                <div id="score-card__home-team__score">
+                    <span id="score-card__home-team__runs">0</span> /
+                    <span id="score-card__home-team__wickets">0</span>
+                </div>
+                <div>
+                    (
+                    <span id="score-card__home-team__overs">0.0</span>
+                    <span>overs</span>
+                    )
+                </div>
+            </div>
+            <div class="score-card__guest-team">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="Indian logo" id="score-card__guest-team__logo">
+                <h3 id="score-card__guest-team__name">Guest</h3>
+                <div id="score-card__guest-team__score">
+                    <span id="score-card__guest-team__runs">0</span> /
+                    <span id="score-card__guest-team__wickets">0</span>
+                </div>
+                <div>
+                    (
+                    <span id="score-card__guest-team__overs">0.0</span>
+                    <span>overs</span>
+                    )
+                </div>
+            </div>
+        </div>
+
+
+        <div class="options">
+            <div>
+                <div id="score-card__one-run" onclick="incrementRuns(1)">1</div>
+
+                <div id="score-card__two-runs" onclick="incrementRuns(2)">2</div>
+
+                <div id="score-card__three-runs" onclick="incrementRuns(3)">3</div>
+
+                <div id="score-card__four-runs" onclick="incrementRuns(4)">4</div>
+            </div>
+            <div>
+                <div id="score-card__six-runs" onclick="incrementRuns(6)">6</div>
+
+                <div id="score-card__wicket" onclick="wicket()">W</div>
+
+                <div id="score-card__wide" onclick="incrementRuns(1)">Wide</div>
+
+                <div id="score-card__no-ball" onclick="incrementRuns(1)">No Ball</div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

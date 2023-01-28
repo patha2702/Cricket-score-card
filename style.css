@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("https://t4.ftcdn.net/jpg/04/67/55/43/360_F_467554323_1MO61sctl5EtBrMet7ht3CjmgKHHQc3G.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.score-card{
+    width: 100%;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams {
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: space-evenly;
+    background-color: rgba(43, 38, 38, 0.6);
+    color: #fff;
+    margin: 5rem auto;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.options > div{
+    display: flex;
+}
+.options > div >  *{
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: rgba(208, 214, 189, 0.7);
+    border: 1px solid black;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 25%;
+    cursor: pointer;
+}
